@@ -1,0 +1,60 @@
+//- index.pug
+doctype html
+html
+  head
+    title Dance Academy 
+    style
+      include ../static/style.css
+  body
+    nav#navbar 
+        ul
+            div#logo
+                img(src="/static/d7.jpg")
+                | DA  
+            li #[a(href="/") Home]
+            li #[a(href="/") About] 
+            li #[a(href="/") Contact us]
+            li #[a(href="/") Class Info]
+            li #[a(href="/") Services]
+    
+    section#introSection
+        div  Welcome To Dance Academy 
+        div.small  Eat Sleep Dance Repeat 
+    
+    section#missionSection
+        h2   Our Mission
+        div.card
+            h3  Any Body Can Dance 
+            div.cardbox
+                div.cardimg
+                    img(src="/static/d3.jpg", alt="")
+
+                div.cardcontent
+                    p “Any kind of dancing is better than no dancing at all.”
+        div.card
+            h3   Dance Perfection
+            div.cardbox
+                div.cardimg
+                    img(src="/static/d4.jpg", alt="")
+
+                div.cardcontent
+                    p “Nobody cares if you can't dance well. ...
+        div.card
+            h3   Expert Teaching 
+            div.cardbox
+                div.cardimg
+                    img(src="/static/d6.jpg", alt="")
+
+                div.cardcontent
+                    p “Dance is the hidden language of the soul.” ...
+    section#sponsorsSection
+        h2   Our Sponsors
+        div#sponsors
+            img(src="/static/logo1.jpg", alt="Sponsor Image", class="spimage")
+            img(src="/static/logo2.jpg", alt="Sponsor Image", class="spimage")
+            img(src="/static/logo3.jpg", alt="Sponsor Image", class="spimage")
+    Footer#footer 
+        | Copyright © 2021 DanceAcademy.com | All Right Reserved
+
+    script
+      include ../static/index.js
