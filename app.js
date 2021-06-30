@@ -49,7 +49,7 @@ app.post("/contact", (req, res) => {
       res.send("This item has been saved to the databases");
     })
     .catch(() => {
-      res.status(400).send("Item was not saved to the databases");
+      res.status(400).send("OOPS DATA NOT SAVED");
     });
   // res.status(200).render("contact.pug");
 });
